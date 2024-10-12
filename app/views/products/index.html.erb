@@ -3,6 +3,7 @@
 <ul>
   <% @products.each do |product| %>
     <li>
+    <a href="/products/<%= product.id %>">
       <%= product.title %>
     </li>
   <% end %>
